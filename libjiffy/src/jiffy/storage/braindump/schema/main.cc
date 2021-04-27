@@ -17,14 +17,14 @@ void main() {
   std::vector<std::string> user_data1 = {"1", "123", "true", "a", "543"};
   std::vector<std::string> user_data2 = {"2", "123", "false", "b", "543"};
   std::vector<std::string> user_data3 = {"3", "123", "true", "c", "543"};
-  confluo::schema_builder builder;
+  schema_builder builder;
 
-  builder.add_column(confluo::data_type("int", NULL), "amount");
-  builder.add_column(confluo::data_type("int", NULL), "amount1");
-  builder.add_column(confluo::data_type("bool", NULL), "exists");
-  builder.add_column(confluo::data_type("char", NULL), "character");
-  builder.add_column(confluo::data_type("int", NULL), "amount3");
-  confluo::schema_t schema(builder.get_columns());
+  builder.add_column(data_type("int", NULL), "amount");
+  builder.add_column(data_type("int", NULL), "amount1");
+  builder.add_column(data_type("bool", NULL), "exists");
+  builder.add_column(data_type("char", NULL), "character");
+  builder.add_column(data_type("int", NULL), "amount3");
+  schema_t schema(builder.get_columns());
   global_log = malloc(schema.record_size() * 3);
 
   // write:
