@@ -7,7 +7,6 @@
 #include "type_manager.h"
 #include "string_utils.h"
 
-namespace confluo {
 
 /**
  * The immutable value class. Contains data that cannot be modified and
@@ -181,6 +180,5 @@ class immutable_value {
   void *ptr_;
 };
 
-}
 
 #endif /* CONFLUO_TYPES_IMMUTABLE_VALUE_H_ */

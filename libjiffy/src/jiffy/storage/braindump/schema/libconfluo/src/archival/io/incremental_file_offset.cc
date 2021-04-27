@@ -1,6 +1,5 @@
 #include "archival/io/incremental_file_offset.h"
 
-namespace confluo {
 namespace archival {
 
 incremental_file_offset::incremental_file_offset()
@@ -21,5 +20,4 @@ size_t incremental_file_offset::offset() const {
   return off_;
 }
 
-}
 }

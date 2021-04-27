@@ -1,6 +1,5 @@
 #include "storage/storage_allocator.h"
 
-namespace confluo {
 namespace storage {
 
 const int storage_allocator::MAX_CLEANUP_RETRIES;
@@ -105,5 +104,4 @@ size_t storage_allocator::memory_utilization() {
   return mem_stat_.get();
 }
 
-}
 }

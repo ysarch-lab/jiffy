@@ -5,8 +5,6 @@
 
 #include "reflog.h"
 
-namespace confluo {
-
 /**
 * String map class. Contains functionality for adding/removing strings
 * to the map
@@ -218,7 +216,5 @@ class string_map {
 
 template<typename V>
 const uint32_t string_map<V>::MAX_BUCKETS = sysconf(_SC_PAGESIZE) / sizeof(reflog *);
-
-}
 
 #endif /* CONFLUO_CONTAINER_STRING_MAP_H_ */

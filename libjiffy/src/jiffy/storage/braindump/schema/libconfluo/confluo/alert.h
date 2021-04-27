@@ -5,7 +5,6 @@
 #include "types/numeric.h"
 #include "time_utils.h"
 
-namespace confluo {
 namespace monitor {
 
 /**
@@ -54,7 +53,6 @@ struct alert {
   uint64_t time_bucket;
 };
 
-}
 }
 
 #endif /* CONFLUO_ALERT_H_ */

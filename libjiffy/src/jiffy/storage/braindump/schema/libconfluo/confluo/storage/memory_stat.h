@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include <cstdint>
 
-namespace confluo {
 namespace storage {
 
 /**
@@ -46,7 +45,6 @@ class memory_stat {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_MEMPOOL_STAT_H_ */

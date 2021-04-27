@@ -1,8 +1,6 @@
 #include "read_tail.h"
 #include "io_utils.h"
 
-namespace confluo {
-
 read_tail::read_tail() {
   read_tail_ = nullptr;
   mode_ = storage::IN_MEMORY;
@@ -36,6 +34,4 @@ void read_tail::advance(uint64_t old_tail, uint32_t bytes) {
     std::this_thread::yield();
   }
   storage::storage_mode_functions::STORAGE_FNS()[mode_].flush(read_tail_, sizeof(uint64_t));
-}
-
 }

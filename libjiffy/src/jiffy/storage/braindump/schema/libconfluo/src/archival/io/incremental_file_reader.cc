@@ -1,6 +1,5 @@
 #include "archival/io/incremental_file_reader.h"
 
-namespace confluo {
 namespace archival {
 
 incremental_file_reader::incremental_file_reader(const std::string &path, const std::string &file_prefix)
@@ -67,5 +66,4 @@ std::ifstream *incremental_file_reader::open(const std::string &path) {
   return new std::ifstream(path);
 }
 
-}
 }

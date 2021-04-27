@@ -1,7 +1,5 @@
 #include "container/cursor/offset_cursors.h"
 
-namespace confluo {
-
 data_log_cursor::data_log_cursor(uint64_t version, uint64_t record_size, size_t batch_size)
     : offset_cursor(batch_size),
       current_offset_(0),
@@ -16,6 +14,4 @@ size_t data_log_cursor::load_next_batch() {
     current_batch_[i] = current_offset_;
   }
   return i;
-}
-
 }

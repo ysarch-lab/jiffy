@@ -1,6 +1,5 @@
 #include "planner/query_ops.h"
 
-namespace confluo {
 namespace planner {
 
 query_op::query_op(const query_op_type &op)
@@ -68,5 +67,4 @@ index::radix_index::rt_result index_op::query_index() {
   return index_->range_lookup(range_.first, range_.second);
 }
 
-}
 }

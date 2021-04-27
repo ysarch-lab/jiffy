@@ -9,8 +9,6 @@
 #include "parser/expression_compiler.h"
 #include "container/data_log.h"
 
-namespace confluo {
-
 typedef batched_cursor<record_t> record_cursor;
 
 /**
@@ -80,7 +78,5 @@ class filter_record_cursor : public record_cursor {
   const schema_t *schema_;
   const parser::compiled_expression &cexpr_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_CURSOR_RECORD_CURSOR_H_ */

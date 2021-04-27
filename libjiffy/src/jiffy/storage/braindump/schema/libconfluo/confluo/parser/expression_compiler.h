@@ -5,7 +5,6 @@
 #include "schema/schema_snapshot.h"
 #include "expression_parser.h"
 
-namespace confluo {
 namespace parser {
 
 namespace spirit = boost::spirit;
@@ -379,7 +378,6 @@ class utree_compile_expression {
  */
 compiled_expression compile_expression(const spirit::utree &e, const schema_t &schema);
 
-}
 }
 
 #endif /* CONFLUO_PARSER_EXPRESSION_COMPILER_H_ */

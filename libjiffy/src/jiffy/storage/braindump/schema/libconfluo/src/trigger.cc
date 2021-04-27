@@ -1,7 +1,5 @@
 #include "trigger.h"
 
-namespace confluo {
-
 monitor::trigger::trigger(const std::string &name,
                           const std::string &aggregate_name,
                           reational_op_id op,
@@ -50,6 +48,4 @@ bool monitor::trigger::is_valid() const {
 
 std::string monitor::trigger::to_string() const {
   return "{ name: \"" + name() + "\", expression: \"" + expr() + "\"}";
-}
-
 }

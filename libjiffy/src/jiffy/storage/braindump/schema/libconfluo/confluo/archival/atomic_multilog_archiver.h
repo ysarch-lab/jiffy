@@ -9,7 +9,6 @@
 #include "index_log_archiver.h"
 #include "read_tail.h"
 
-namespace confluo {
 namespace archival {
 
 class atomic_multilog_archiver {
@@ -76,7 +75,6 @@ class atomic_multilog_archiver {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ATOMIC_MULTILOG_ARCHIVAL_ARCHIVER_H_ */

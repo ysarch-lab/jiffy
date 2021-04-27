@@ -12,7 +12,6 @@
 
 #include "types/relational_ops.h"
 
-namespace confluo {
 namespace parser {
 
 namespace qi = boost::spirit::qi;
@@ -424,7 +423,6 @@ struct expression_parser : qi::grammar<I, ascii::space_type, spirit::utree()> {
  */
 spirit::utree parse_expression(const std::string &e);
 
-}
 }
 
 #endif /* CONFLUO_EXPRESSION_PARSER_H_ */

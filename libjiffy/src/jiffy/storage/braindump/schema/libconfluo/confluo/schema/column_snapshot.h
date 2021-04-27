@@ -5,7 +5,6 @@
 
 #include "types/data_type.h"
 
-namespace confluo {
 
 /**
  * Data for snapshot of column
@@ -23,6 +22,5 @@ struct column_snapshot {
   double index_bucket_size;
 };
 
-}
 
 #endif /* CONFLUO_SCHEMA_COLUMN_SNAPSHOT_H_ */

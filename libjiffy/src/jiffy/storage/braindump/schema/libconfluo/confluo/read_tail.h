@@ -7,8 +7,6 @@
 #include "atomic.h"
 #include "storage/storage.h"
 
-namespace confluo {
-
 /**
  * The read tail marker. Contains operations for modifying and setting
  * the marker for read requests.
@@ -59,6 +57,5 @@ class read_tail {
   storage::storage_mode mode_;
 };
 
-}
 
 #endif /* CONFLUO_READ_TAIL_H_ */

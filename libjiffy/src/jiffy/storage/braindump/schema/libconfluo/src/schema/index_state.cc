@@ -1,7 +1,5 @@
 #include "schema/index_state.h"
 
-namespace confluo {
-
 const uint8_t index_state_t::UNINDEXED;
 const uint8_t index_state_t::INDEXING;
 const uint8_t index_state_t::INDEXED;
@@ -52,6 +50,4 @@ void index_state_t::set_unindexed() {
 bool index_state_t::disable_indexing() {
   uint8_t expected = INDEXED;
   return atomic::strong::cas(&state_, &expected, UNINDEXED);
-}
-
 }

@@ -6,8 +6,6 @@
 
 #include "error_handling.h"
 
-namespace confluo {
-
 /**
  * Defines an exception for a given name
  */
@@ -52,7 +50,5 @@ DEFINE_EXCEPTION(management_exception)
 
 #define THROW(ex, msg)\
     throw ex(msg)
-
-}
 
 #endif /* CONFLUO_EXCEPTIONS_H_ */

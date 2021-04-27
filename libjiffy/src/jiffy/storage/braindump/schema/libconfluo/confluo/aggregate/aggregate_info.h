@@ -9,8 +9,6 @@
 
 using namespace confluo::monitor;
 
-namespace confluo {
-
 /**
 * Information about the aggregate
 */
@@ -152,7 +150,5 @@ class aggregate_info {
  * @brief Log of aggregate_info pointers
  */
 typedef monolog::monolog_exp2<aggregate_info *> aggregate_log;
-
-}
 
 #endif /* CONFLUO_AGGREGATE_INFO_H_ */

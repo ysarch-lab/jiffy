@@ -1,6 +1,5 @@
 #include "archival/atomic_multilog_archiver.h"
 
-namespace confluo {
 namespace archival {
 
 atomic_multilog_archiver::atomic_multilog_archiver()
@@ -52,5 +51,4 @@ std::string atomic_multilog_archiver::index_log_path() {
   return path_ + "/archives/indexes/";
 }
 
-}
 }

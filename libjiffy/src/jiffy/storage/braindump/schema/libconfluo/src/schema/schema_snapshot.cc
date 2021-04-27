@@ -1,7 +1,5 @@
 #include "schema/schema_snapshot.h"
 
-namespace confluo {
-
 void schema_snapshot::add_column(const column_snapshot &snap) {
   snapshot_.push_back(snap);
 }
@@ -43,6 +41,4 @@ double schema_snapshot::index_bucket_size(size_t i) const {
 
 size_t schema_snapshot::num_columns() const {
   return snapshot_.size();
-}
-
 }

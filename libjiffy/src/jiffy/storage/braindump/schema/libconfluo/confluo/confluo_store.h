@@ -12,8 +12,6 @@
 
 using namespace ::utils;
 
-namespace confluo {
-
 /**
 * Managment of an atomic multilog
 */
@@ -158,7 +156,5 @@ class confluo_store {
   monolog::monolog_exp2<atomic_multilog *> atomic_multilogs_;
   string_map<size_t> multilog_map_;
 };
-
-}
 
 #endif /* CONFLUO_CONFLUO_STORE_H_ */

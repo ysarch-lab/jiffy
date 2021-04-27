@@ -4,7 +4,6 @@
 #include <cstdint>
 #include "ptr_metadata.h"
 
-namespace confluo {
 namespace storage {
 
 /**
@@ -43,7 +42,5 @@ typedef struct ptr_aux_block {
 
 } aux_block;
 
-}
-}
 
 #endif /* CONFLUO_STORAGE_PTR_AUX_BLOCK_H_ */

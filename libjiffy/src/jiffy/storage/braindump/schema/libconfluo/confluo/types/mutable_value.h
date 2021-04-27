@@ -7,7 +7,6 @@
 #include "exceptions.h"
 #include "immutable_value.h"
 
-namespace confluo {
 
 /**
  * The mutable value class. Contains modifiable data and arithmetic 
@@ -335,6 +334,5 @@ class mutable_value : public immutable_value {
   mutable_value &operator=(mutable_value &&other);
 };
 
-}
 
 #endif /* CONFLUO_TYPES_MUTABLE_VALUE_H_ */

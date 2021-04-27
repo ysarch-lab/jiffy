@@ -1,7 +1,5 @@
 #include "schema/record_batch.h"
 
-namespace confluo {
-
 const int64_t record_batch_builder::TIME_BLOCK;
 
 int64_t record_batch::start_time_block() const {
@@ -44,6 +42,4 @@ record_batch record_batch_builder::get_batch() {
     i++;
   }
   return batch;
-}
-
 }

@@ -1,7 +1,5 @@
 #include "types/primitive_types.h"
 
-namespace confluo {
-
 /** The minimum boolean value */
 bool limits::bool_min = std::numeric_limits<bool>::lowest();
 /** The zero boolean value */
@@ -100,5 +98,3 @@ double limits::double_zero = static_cast<double>(0.0);
 double limits::double_one = static_cast<double>(1.0);
 /** The max double value */
 double limits::double_max = std::numeric_limits<double>::max();
-
-}

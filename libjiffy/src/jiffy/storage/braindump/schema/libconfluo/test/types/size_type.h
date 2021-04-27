@@ -13,7 +13,7 @@
 #include "types/immutable_value.h"
 #include "types/type_properties.h"
 
-namespace confluo {
+ 
 
 class size_type {
  public:

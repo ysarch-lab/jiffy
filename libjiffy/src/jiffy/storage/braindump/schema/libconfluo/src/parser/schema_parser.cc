@@ -1,6 +1,5 @@
 #include "parser/schema_parser.h"
 
-namespace confluo {
 namespace parser {
 
 std::vector<column_t> parse_schema(const std::string &s) {
@@ -23,5 +22,4 @@ std::vector<column_t> parse_schema(const std::string &s) {
   return b.get_columns();
 }
 
-}
 }

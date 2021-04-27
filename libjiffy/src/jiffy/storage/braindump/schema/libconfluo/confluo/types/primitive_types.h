@@ -4,7 +4,6 @@
 #include <limits>
 #include <cstdint>
 
-namespace confluo {
 
 /**
  * Identification of primitive types
@@ -128,6 +127,5 @@ class limits {
   static double double_max;
 };
 
-}
 
 #endif /* CONFLUO_TYPES_PRIMITIVE_TYPES_H_ */

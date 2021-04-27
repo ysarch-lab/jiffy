@@ -3,7 +3,6 @@
 
 #include <atomic.h>
 
-namespace confluo {
 namespace storage {
 
 /**
@@ -48,7 +47,6 @@ class reference_counts {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_REFERENCE_COUNTS_H_ */

@@ -14,8 +14,6 @@
 
 using namespace utils;
 
-namespace confluo {
-
 /**
  * Different types of metadata
  */
@@ -369,7 +367,5 @@ class metadata_reader {
   std::string filename_;
   std::ifstream in_;
 };
-
-}
 
 #endif /* CONFLUO_ATOMIC_MULTILOG_METADATA_H_ */

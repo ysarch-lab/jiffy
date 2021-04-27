@@ -15,7 +15,6 @@
 #include "key_ops.h"
 #include "relational_ops.h"
 
-namespace confluo {
 
 /**
  * A type of data that operations can be performed on
@@ -230,6 +229,5 @@ struct data_type {
   static data_type from_string(const std::string &str);
 };
 
-}
 
 #endif /* CONFLUO_TYPES_DATA_TYPE_H_ */

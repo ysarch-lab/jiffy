@@ -5,8 +5,6 @@
 #include "config_utils.h"
 #include "defaults.h"
 
-namespace confluo {
-
 class conf {
  public:
   static utils::configuration_map &instance() {
@@ -89,7 +87,5 @@ class configuration_params {
     return conf::instance().get<uint64_t>("monitor_periodicity_ms", defaults::DEFAULT_MONITOR_PERIODICITY_MS());
   }
 };
-
-}
 
 #endif /* CONFLUO_CONF_CONFIGURATION_PARAMS_H_ */

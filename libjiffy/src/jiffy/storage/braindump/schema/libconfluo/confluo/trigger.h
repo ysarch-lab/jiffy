@@ -5,7 +5,6 @@
 #include "types/relational_ops.h"
 #include "schema/schema_snapshot.h"
 
-namespace confluo {
 namespace monitor {
 
 /**
@@ -91,7 +90,6 @@ struct trigger {
   atomic::type<bool> is_valid_;
 };
 
-}
 }
 
 #endif /* CONFLUO_TRIGGER_H_ */

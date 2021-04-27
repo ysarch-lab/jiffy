@@ -10,7 +10,6 @@
 
 #include "byte_utils.h"
 
-namespace confluo {
 
 class byte_string;
 
@@ -462,7 +461,5 @@ class byte_string {
   size_t size_;
   uint8_t *data_;
 };
-
-}
 
 #endif /* CONFLUO_TYPES_BYTE_STRING_H_ */

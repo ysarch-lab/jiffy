@@ -64,8 +64,6 @@ using namespace ::confluo::parser;
 using namespace ::confluo::planner;
 using namespace ::utils;
 
-namespace confluo {
-
 /**
 * The main data structure for the data store
 */
@@ -571,7 +569,5 @@ class atomic_multilog {
   /** The monitor task */
   periodic_task monitor_task_;
 };
-
-}
 
 #endif /* CONFLUO_ATOMIC_MULTILOG_H_ */

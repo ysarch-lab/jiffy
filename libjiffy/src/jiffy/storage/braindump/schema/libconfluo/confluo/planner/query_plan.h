@@ -10,7 +10,6 @@
 #include "query_ops.h"
 #include "exceptions.h"
 
-namespace confluo {
 namespace planner {
 
 /**
@@ -80,7 +79,6 @@ class query_plan : public std::vector<std::shared_ptr<query_op>> {
   const parser::compiled_expression &expr_;
 };
 
-}
 }
 
 #endif /* CONFLUO_PLANNER_QUERY_PLAN_H_ */

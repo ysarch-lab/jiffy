@@ -1,7 +1,5 @@
 #include "filter.h"
 
-namespace confluo {
-
 filter::filter(const compiled_expression &exp, filter_fn fn)
     : exp_(exp),
       fn_(fn),
@@ -112,6 +110,4 @@ bool filter::is_valid() {
 
 filter::idx_t &filter::data() {
   return idx_;
-}
-
 }

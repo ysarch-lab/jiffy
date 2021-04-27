@@ -11,8 +11,6 @@
 #include "storage/allocator.h"
 #include "bit_utils.h"
 
-namespace confluo {
-
 /**
  * The bitmap class. Stores a bit-array of a fixed size, and supports access and
  * modifications via efficient bitwise arithmetic.
@@ -203,7 +201,5 @@ class bitmap {
   /** The bitmap size */
   size_type size_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_BITMAP_BITMAP_H_ */

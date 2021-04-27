@@ -13,7 +13,6 @@
 #include "container/bitmap/delta_encoded_array.h"
 #include "container/unique_byte_array.h"
 
-namespace confluo {
 namespace compression {
 
 /**
@@ -42,7 +41,6 @@ class delta_encoder {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_COMPRESSION_DELTA_ENCODER_H_ */

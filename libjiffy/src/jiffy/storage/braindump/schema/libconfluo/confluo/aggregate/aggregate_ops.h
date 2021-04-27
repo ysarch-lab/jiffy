@@ -4,7 +4,7 @@
 #include "types/data_type.h"
 #include "types/numeric.h"
 
-namespace confluo {
+ 
 
 /** Function pointer for the aggregation function */
 using aggregate_fn = numeric (*)(const numeric &v1, const numeric &v2);

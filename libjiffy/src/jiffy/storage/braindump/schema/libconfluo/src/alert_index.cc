@@ -1,7 +1,5 @@
 #include "alert_index.h"
 
-namespace confluo {
-
 monitor::alert_index::alert_index()
     : idx_(8, 256) {
 }
@@ -36,6 +34,4 @@ int64_t monitor::alert_index::find_alert(monitor::alert_index::alert_log *log,
     }
   }
   return -1;
-}
-
 }

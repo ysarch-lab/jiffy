@@ -1,6 +1,5 @@
 #include "storage/reference_counts.h"
 
-namespace confluo {
 namespace storage {
 
 const uint32_t reference_counts::FIRST_DELTA;
@@ -62,5 +61,4 @@ uint32_t reference_counts::get_second() {
   return atomic::load(&ref_counts_) >> SECOND_SHIFT;
 }
 
-}
 }

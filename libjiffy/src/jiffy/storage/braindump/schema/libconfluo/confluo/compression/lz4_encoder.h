@@ -13,7 +13,6 @@
 #include "lz4.h"
 #include "container/unique_byte_array.h"
 
-namespace confluo {
 namespace compression {
 
 /**
@@ -83,7 +82,6 @@ class lz4_encoder {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_COMPRESSION_LZ4_ENCODER_H_ */

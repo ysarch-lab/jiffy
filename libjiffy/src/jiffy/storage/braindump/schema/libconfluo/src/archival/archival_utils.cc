@@ -1,6 +1,5 @@
 #include "archival/archival_utils.h"
 
-namespace confluo {
 namespace archival {
 
 std::string archival_utils::filter_archival_path(const std::string &filter_log_path, size_t filter_log_idx) {
@@ -24,5 +23,4 @@ uint64_t archival_utils::max_in_reflog_bucket(uint64_t *bucket) {
   return max;
 }
 
-}
 }

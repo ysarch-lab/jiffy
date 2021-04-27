@@ -1,6 +1,5 @@
 #include "archival/filter_log_archiver.h"
 
-namespace confluo {
 namespace archival {
 
 filter_log_archiver::filter_log_archiver()
@@ -34,5 +33,4 @@ void filter_log_archiver::init_new_archivers() {
   }
 }
 
-}
 }

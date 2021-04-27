@@ -6,8 +6,6 @@
 #include "exceptions.h"
 #include "raw_data.h"
 
-namespace confluo {
-
 /**
  * Relational operators
  */
@@ -287,7 +285,5 @@ class relop_utils {
     return "INVALID";
   }
 };
-
-}
 
 #endif /* CONFLUO_TYPES_RELATIONAL_OPS_H_ */

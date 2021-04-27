@@ -1,7 +1,5 @@
 #include "container/cursor/record_cursors.h"
 
-namespace confluo {
-
 distinct_record_cursor::distinct_record_cursor(std::unique_ptr<record_cursor> r_cursor, size_t batch_size)
     : record_cursor(batch_size),
       r_cursor_(std::move(r_cursor)) {
@@ -51,6 +49,4 @@ size_t filter_record_cursor::load_next_batch() {
     }
   }
   return i;
-}
-
 }

@@ -13,7 +13,6 @@
 #include "schema/record.h"
 #include "hash_manager.h"
 
-namespace confluo {
 namespace sketch {
 
 class universal_sketch {
@@ -197,7 +196,6 @@ private:
 
 };
 
-}
 }
 
 #endif //CONFLUO_CONTAINER_SKETCH_CONFLUO_UNIVERSAL_SKETCH_H

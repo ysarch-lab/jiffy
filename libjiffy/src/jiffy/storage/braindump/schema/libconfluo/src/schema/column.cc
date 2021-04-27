@@ -1,8 +1,6 @@
 #include "string_utils.h"
 #include "schema/column.h"
 
-namespace confluo {
-
 column_t::column_t()
     : idx_(UINT16_MAX),
       type_(primitive_types::NONE_TYPE()),
@@ -86,5 +84,4 @@ field_t column_t::apply(void *data) const {
 
 column_snapshot column_t::snapshot() const {
   return {type_, offset_, is_indexed(), index_id(), index_bucket_size()};
-}
 }

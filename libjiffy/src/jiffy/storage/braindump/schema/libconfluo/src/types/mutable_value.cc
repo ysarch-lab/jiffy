@@ -1,7 +1,5 @@
 #include "types/mutable_value.h"
 
-namespace confluo {
-
 mutable_value::mutable_value(data_type type)
     : immutable_value(type, type.is_none() ? nullptr : new uint8_t[type.size]()) {
 }
@@ -194,6 +192,4 @@ mutable_value &mutable_value::operator=(mutable_value &&other) {
   }
 
   return *this;
-}
-
 }

@@ -10,7 +10,6 @@
 #include "logger.h"
 #include "thread_utils.h"
 
-namespace confluo {
 
 typedef pthread_t thread_id_t;
 
@@ -90,6 +89,5 @@ class thread_manager {
   static thread_info *THREAD_INFO();
 };
 
-}
 
 #endif /* CONFLUO_THREADS_THREAD_MANAGER_H_ */

@@ -1,6 +1,5 @@
 #include "storage/ptr_aux_block.h"
 
-namespace confluo {
 namespace storage {
 
 const uint8_t state_type::D_IN_MEMORY;
@@ -21,5 +20,4 @@ ptr_aux_block ptr_aux_block::get(ptr_metadata *metadata) {
   return *reinterpret_cast<ptr_aux_block *>(&aux);
 }
 
-}
 }

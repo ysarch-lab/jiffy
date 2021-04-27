@@ -5,7 +5,6 @@
 #include <functional>
 #include <unordered_set>
 
-namespace confluo {
 namespace lazy {
 
 /**
@@ -440,7 +439,6 @@ stream<typename C::value_type> container_to_stream(C const &c) {
   return iterator_to_stream(c.begin(), c.end());
 }
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_LAZY_STREAM_H_ */

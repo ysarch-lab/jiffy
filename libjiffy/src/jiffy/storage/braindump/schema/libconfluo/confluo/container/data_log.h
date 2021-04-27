@@ -4,8 +4,6 @@
 #include "monolog/monolog.h"
 #include "archival/monolog_linear_archiver.h"
 
-namespace confluo {
-
 /**
  * Constants for the data log
  */
@@ -32,7 +30,5 @@ typedef archival::monolog_linear_archiver<uint8_t,
 typedef storage::read_only_encoded_ptr<uint8_t> read_only_data_log_ptr;
 typedef storage::encoded_ptr<uint8_t> encoded_data_log_ptr;
 typedef storage::decoded_ptr<uint8_t> data_ptr;
-
-}
 
 #endif /* CONFLUO_CONTAINER_DATA_LOG_H_ */

@@ -1,8 +1,6 @@
 #include "atomic_multilog.h"
 
 
-namespace confluo {
-
 atomic_multilog::atomic_multilog(const std::string &name,
                                  const std::vector<column_t> &schema,
                                  const std::string &path,
@@ -686,6 +684,4 @@ void atomic_multilog::check_time_bucket(filter *f, trigger *t, size_t tid, uint6
       }
     }
   }
-}
-
 }

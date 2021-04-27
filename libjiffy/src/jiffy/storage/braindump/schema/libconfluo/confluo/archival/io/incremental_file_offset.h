@@ -3,7 +3,6 @@
 
 #include <string>
 
-namespace confluo {
 namespace archival {
 
 /**
@@ -25,7 +24,6 @@ class incremental_file_offset {
   size_t off_;
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_IO_INCR_FILE_OFFSET_H_ */

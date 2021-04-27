@@ -240,8 +240,11 @@ if (BUILD_STORAGE OR BUILD_DIRECTORY)
             ${HEAP_MANAGER_LIBRARY}
             ${NUMA_LIBRARY}
             ${CMAKE_DL_LIBS}
-            ${CMAKE_THREAD_LIBS_INIT})
+            ${CMAKE_THREAD_LIBS_INIT}
+            schema)
   set_target_properties(jiffy PROPERTIES LINKER_LANGUAGE CXX)
+
+  add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/jiffy/storage/braindump/schema)
 
   install(TARGETS jiffy
           RUNTIME DESTINATION bin

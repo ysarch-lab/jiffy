@@ -5,7 +5,6 @@
 #include <iostream>
 #include "rand_utils.h"
 
-namespace confluo {
 namespace sketch {
 
 /**
@@ -115,7 +114,6 @@ class hash_manager {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_SKETCH_HASH_MANAGER_H_ */

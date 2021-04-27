@@ -12,7 +12,6 @@
 #include "storage/ptr_aux_block.h"
 #include "storage/ptr_metadata.h"
 
-namespace confluo {
 namespace archival {
 
 using namespace ::utils;
@@ -128,7 +127,6 @@ class monolog_linear_load_utils {
   }
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_MONOLOG_LINEAR_ARCHIVER_H_ */

@@ -1,7 +1,6 @@
 #include <types/type_properties.h>
 #include "types/data_type.h"
 
-namespace confluo {
 
 size_t find_type_properties(const std::string &name) {
   std::string uname = utils::string_utils::to_upper(name);
@@ -136,6 +135,4 @@ data_type data_type::from_string(const std::string &str) {
                      data_type_properties::instance()[id].size ? data_type_properties::instance()[id].size : size);
   }
   THROW(parse_exception, "Malformed type name " + str);
-}
-
 }

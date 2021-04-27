@@ -5,7 +5,6 @@
 #include "types/primitive_types.h"
 #include "container/reflog.h"
 
-namespace confluo {
 namespace archival {
 
 /**
@@ -47,7 +46,6 @@ class archival_utils {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_ARCHIVAL_CONSTS_H_ */

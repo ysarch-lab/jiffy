@@ -10,7 +10,7 @@
 #include "types/byte_string.h"
 #include "types/immutable_value.h"
 
-namespace confluo {
+ 
 
 class ip_address {
  public:

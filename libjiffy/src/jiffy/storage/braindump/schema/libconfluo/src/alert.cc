@@ -1,6 +1,5 @@
 #include "alert.h"
 
-namespace confluo {
 namespace monitor {
 
 alert::alert()
@@ -36,5 +35,4 @@ bool operator<(const alert &left, const alert &right) {
   return left.time_bucket < right.time_bucket;
 }
 
-}
 }

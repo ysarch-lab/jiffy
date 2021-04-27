@@ -5,8 +5,6 @@
 #include "immutable_value.h"
 #include "string_utils.h"
 
-namespace confluo {
-
 class numeric;
 
 /** Helpers for casting numerics **/
@@ -721,7 +719,5 @@ class cast_ops {
 
   std::vector<std::vector<cast_fn>> cast_ops_;
 };
-
-}
 
 #endif /* CONFLUO_TYPES_NUMERIC_H_ */

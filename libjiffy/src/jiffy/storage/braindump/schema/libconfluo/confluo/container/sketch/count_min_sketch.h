@@ -8,7 +8,6 @@
 #include "hash_manager.h"
 #include "types/primitive_types.h"
 
-namespace confluo {
 namespace sketch {
 
 /**
@@ -138,7 +137,6 @@ class count_min_sketch {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_SKETCH_COUNT_MIN_SKETCH_H_ */

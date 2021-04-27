@@ -4,8 +4,6 @@
 #include "exceptions.h"
 #include "storage/ptr_aux_block.h"
 
-namespace confluo {
-
 class encoding_params {
  public:
   static inline std::string UNENCODED() {
@@ -36,6 +34,5 @@ class configuration_parser {
 
 };
 
-}
 
 #endif /* LIBCONFLUO_CONFLUO_CONF_CONFIGURATION_PARSER_H_ */

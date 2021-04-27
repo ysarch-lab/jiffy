@@ -1,7 +1,5 @@
 #include "aggregate/aggregate_info.h"
 
-namespace confluo {
-
 aggregate_info::aggregate_info(std::string name, aggregator agg, uint16_t field_idx)
     : name_(std::move(name)),
       agg_(std::move(agg)),
@@ -74,6 +72,4 @@ trigger *aggregate_info::get_trigger(size_t id) {
 
 size_t aggregate_info::num_triggers() const {
   return triggers_.size();
-}
-
 }

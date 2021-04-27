@@ -1,6 +1,5 @@
 #include "archival/index_log_archiver.h"
 
-namespace confluo {
 namespace archival {
 
 index_log_archiver::index_log_archiver()
@@ -46,5 +45,4 @@ void index_log_archiver::init_new_archivers() {
   }
 }
 
-}
 }

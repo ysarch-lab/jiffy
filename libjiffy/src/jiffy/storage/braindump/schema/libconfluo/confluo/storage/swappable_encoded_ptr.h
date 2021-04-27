@@ -7,7 +7,6 @@
 #include "reference_counts.h"
 #include "storage_utils.h"
 
-namespace confluo {
 namespace storage {
 
 /**
@@ -367,7 +366,6 @@ class swappable_encoded_ptr {
   atomic::type<encoded_ptr<T>> enc_ptr_;
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_SWAPPABLE_ENCODED_PTR_H_ */

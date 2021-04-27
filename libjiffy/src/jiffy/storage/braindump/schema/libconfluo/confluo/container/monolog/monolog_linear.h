@@ -10,7 +10,6 @@
 #include "monolog_linear_bucket.h"
 #include "storage/storage.h"
 
-namespace confluo {
 namespace monolog {
 
 /**
@@ -476,7 +475,6 @@ class monolog_linear : public monolog_linear_base<T, MAX_BUCKETS, BUCKET_SIZE, B
   atomic::type<size_t> tail_;
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_MONOLOG_MONOLOG_LINEAR_H_ */

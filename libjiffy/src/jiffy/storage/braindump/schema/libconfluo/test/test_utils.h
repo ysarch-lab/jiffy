@@ -3,7 +3,6 @@
 
 #include "gtest/gtest.h"
 
-namespace confluo {
 namespace test {
 class test_utils {
  public:
@@ -19,7 +18,6 @@ class test_utils {
   }
 };
 
-}
 }
 
 #endif /* CONFLUO_TEST_TEST_UTILS_H_ */

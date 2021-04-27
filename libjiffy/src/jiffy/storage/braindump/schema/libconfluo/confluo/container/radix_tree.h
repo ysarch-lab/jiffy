@@ -10,7 +10,6 @@
 #include "types/byte_string.h"
 #include "flatten.h"
 
-namespace confluo {
 namespace index {
 
 /**
@@ -856,7 +855,6 @@ class radix_tree {
 /** The radix index */
 typedef radix_tree<reflog> radix_index;
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_RADIX_TREE_H_ */

@@ -1,6 +1,5 @@
 #include "aggregated_reflog.h"
 
-namespace confluo {
 
 aggregated_reflog::aggregated_reflog()
     : reflog(),
@@ -44,6 +43,4 @@ size_t aggregated_reflog::num_aggregates() const {
 
 storage::swappable_ptr<aggregate> &aggregated_reflog::aggregates() {
   return aggregates_;
-}
-
 }

@@ -16,7 +16,6 @@
 #include "io/incremental_file_writer.h"
 #include "archival_utils.h"
 
-namespace confluo {
 namespace archival {
 
 using namespace compression;
@@ -134,7 +133,6 @@ class filter_load_utils {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_FILTER_ARCHIVER_H_ */

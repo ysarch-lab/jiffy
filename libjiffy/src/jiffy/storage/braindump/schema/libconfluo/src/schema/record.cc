@@ -1,7 +1,5 @@
 #include "schema/record.h"
 
-namespace confluo {
-
 record_t::record_t()
     : timestamp_(0),
       log_offset_(0),
@@ -102,6 +100,4 @@ std::string record_t::to_string() const {
 
 bool record_t::operator==(const record_t &other) const {
   return log_offset_ == other.log_offset_;
-}
-
 }

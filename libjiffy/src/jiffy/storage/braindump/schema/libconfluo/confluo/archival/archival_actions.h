@@ -5,7 +5,6 @@
 #include <string>
 #include "types/byte_string.h"
 
-namespace confluo {
 namespace archival {
 
 /**
@@ -150,7 +149,6 @@ class index_archival_action {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_ARCHIVAL_HEADERS_H_ */

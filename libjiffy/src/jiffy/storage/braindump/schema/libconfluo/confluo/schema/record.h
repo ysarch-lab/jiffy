@@ -7,8 +7,6 @@
 #include "storage/swappable_encoded_ptr.h"
 #include "field.h"
 
-namespace confluo {
-
 /**
  * The record type. Contains functionality to iterate and modify data
  * stored in the record
@@ -189,7 +187,5 @@ struct hash<confluo::record_t> {
     return k.log_offset();
   }
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_RECORD_H_ */

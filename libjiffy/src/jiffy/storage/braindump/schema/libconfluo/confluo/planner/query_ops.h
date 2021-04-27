@@ -8,7 +8,6 @@
 #include "schema/schema.h"
 #include "container/cursor/offset_cursors.h"
 
-namespace confluo {
 namespace planner {
 
 /**
@@ -186,7 +185,6 @@ class index_op : public query_op {
   key_range range_;
 };
 
-}
 }
 
 #endif /* CONFLUO_PLANNER_QUERY_OPS_H_ */

@@ -3,8 +3,6 @@
 
 #include <memory>
 
-namespace confluo {
-
 class unique_byte_array {
 
  public:
@@ -36,6 +34,5 @@ class unique_byte_array {
 
 };
 
-}
 
 #endif /* CONFLUO_CONTAINER_UNIQUE_BYTE_ARRAY_H_ */

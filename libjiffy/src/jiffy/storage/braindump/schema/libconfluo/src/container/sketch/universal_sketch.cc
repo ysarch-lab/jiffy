@@ -1,6 +1,5 @@
 #include "container/sketch/universal_sketch.h"
 
-namespace confluo {
 namespace sketch {
 
 universal_sketch::universal_sketch(double epsilon, double gamma, size_t k, data_log *log, column_t column)
@@ -155,5 +154,4 @@ void universal_sketch::update_heavy_hitters(size_t idx, key_t key_hash, size_t o
   }
 }
 
-}
 }

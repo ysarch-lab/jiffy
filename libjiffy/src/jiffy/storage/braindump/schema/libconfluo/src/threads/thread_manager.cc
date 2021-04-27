@@ -1,6 +1,6 @@
 #include "threads/thread_manager.h"
 
-namespace confluo {
+
 
 int thread_manager::register_thread(thread_id_t thread_id) {
   // De-register if already registered
@@ -66,6 +66,4 @@ int thread_manager::MAX_CONCURRENCY() {
 thread_info *thread_manager::THREAD_INFO() {
   static thread_info *info = thread_manager::init_thread_info();
   return info;
-}
-
 }

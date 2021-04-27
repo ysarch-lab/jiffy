@@ -1,6 +1,5 @@
 #include "archival/filter_archiver.h"
 
-namespace confluo {
 namespace archival {
 
 filter_archiver::filter_archiver(const std::string &path, monitor::filter *filter)
@@ -133,5 +132,4 @@ void filter_load_utils::init_bucket_ptr(reflog *refs, size_t idx, encoded_reflog
   container[bucket_idx].atomic_init(encoded_bucket, old_data);
 }
 
-}
 }

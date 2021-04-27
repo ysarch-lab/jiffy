@@ -7,8 +7,6 @@
 #include "types/data_type.h"
 #include "types/immutable_value.h"
 
-namespace confluo {
-
 /**
  * Field class. Contains operations for operating on the data in the
  * schema.
@@ -95,7 +93,5 @@ struct field_t {
   uint16_t index_id_;
 
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_FIELD_H_ */

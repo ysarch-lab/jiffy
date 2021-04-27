@@ -1,7 +1,5 @@
 #include "aggregate/aggregate.h"
 
-namespace confluo {
-
 aggregate_node::aggregate_node()
     : aggregate_node(primitive_types::NONE_TYPE(), 0, nullptr) {
 }
@@ -193,6 +191,4 @@ numeric aggregate::get(uint64_t version) const {
   for (int i = 0; i < concurrency_; i++)
     val = agg_.comb_op(val, aggs_[i].get(version));
   return val;
-}
-
 }

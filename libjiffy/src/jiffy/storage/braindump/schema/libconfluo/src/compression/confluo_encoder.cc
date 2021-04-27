@@ -1,6 +1,5 @@
 #include "compression/confluo_encoder.h"
 
-namespace confluo {
 namespace compression {
 
 unique_byte_array confluo_encoder::encode(void *ptr, size_t size, uint8_t encoding) {
@@ -25,5 +24,4 @@ unique_byte_array confluo_encoder::encode(void *ptr, size_t size, uint8_t encodi
 
 void confluo_encoder::no_op_delete(uint8_t *) {}
 
-}
 }

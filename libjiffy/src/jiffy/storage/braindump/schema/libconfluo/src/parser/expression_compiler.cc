@@ -1,6 +1,5 @@
 #include "parser/expression_compiler.h"
 
-namespace confluo {
 namespace parser {
 
 compiled_predicate::compiled_predicate(const std::string &attr, int op, const std::string &value, const schema_t &s)
@@ -132,6 +131,5 @@ utree_compile_expression::result_type utree_compile_expression::operator()(spiri
 
 compiled_expression compile_expression(const spirit::utree &e, const schema_t &schema) {
   return spirit::utree::visit(e, utree_compile_expression(schema));
-}
 }
 }

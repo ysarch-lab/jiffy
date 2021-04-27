@@ -10,8 +10,6 @@
 #include "exceptions.h"
 #include "raw_data.h"
 
-namespace confluo {
-
 /**
  * Unary arithmetic/bitwise operators
  */
@@ -899,8 +897,6 @@ template<typename T>
 inline binary_ops_t init_binaryops() {
   return {add<T>, subtract<T>, multiply<T>, divide<T>, modulo<T>, bw_and<T>, bw_or<T>, bw_xor<T>, bw_lshift<T>,
           bw_rshift<T>};
-}
-
 }
 
 #endif /* CONFLUO_TYPES_ARITHMETIC_OPS_H_ */

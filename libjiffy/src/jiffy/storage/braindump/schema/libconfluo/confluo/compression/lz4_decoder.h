@@ -12,7 +12,6 @@
 #include "lz4.h"
 #include "compression/lz4_encoder.h"
 
-namespace confluo {
 namespace compression {
 
 /**
@@ -171,7 +170,6 @@ class lz4_decoder {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_COMPRESSION_LZ4_DECODER_H_ */

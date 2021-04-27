@@ -5,7 +5,6 @@
 #include <queue>
 #include "rand_utils.h"
 
-namespace confluo {
 namespace sketch {
 
 template<typename T, typename P>
@@ -115,7 +114,6 @@ public:
   }
 };
 
-}
 }
 
 #endif //CONFLUO_PRIORITY_QUEUE_H

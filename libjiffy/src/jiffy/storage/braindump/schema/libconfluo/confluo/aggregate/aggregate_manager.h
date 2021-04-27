@@ -3,8 +3,6 @@
 
 #include "aggregate_ops.h"
 
-namespace confluo {
-
 /**
  * Manager of the aggregates
  */
@@ -55,7 +53,5 @@ class aggregate_manager {
    */
   static bool is_valid_id(size_t id);
 };
-
-}
 
 #endif /* CONFLUO_AGGREGATE_AGGREGATE_MANAGER_H_ */

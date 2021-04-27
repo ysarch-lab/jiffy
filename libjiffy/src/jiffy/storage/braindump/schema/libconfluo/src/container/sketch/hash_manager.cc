@@ -1,6 +1,5 @@
 #include "container/sketch/hash_manager.h"
 
-namespace confluo {
 namespace sketch {
 
 const size_t pairwise_indep_hash::PRIME = 39916801UL;
@@ -39,5 +38,4 @@ size_t hash_manager::storage_size() const {
   return sizeof(pairwise_indep_hash) * hashes_.capacity();
 }
 
-}
 }

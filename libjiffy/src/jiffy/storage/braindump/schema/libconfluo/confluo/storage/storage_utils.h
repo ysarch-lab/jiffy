@@ -4,7 +4,6 @@
 #include <new>
 #include "ptr_metadata.h"
 
-namespace confluo {
 namespace storage {
 
 template<class T, class enabler = void>
@@ -44,7 +43,6 @@ struct lifecycle_util<T, std::enable_if<std::is_fundamental<T>::value>> {
   static void destroy(void *ptr) {}
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_STORAGE_UTILS_H_ */

@@ -11,7 +11,6 @@
 #include "ptr_aux_block.h"
 #include "ptr_metadata.h"
 
-namespace confluo {
 namespace storage {
 
 // TODO: delegate requests to memory pools
@@ -85,7 +84,6 @@ class storage_allocator {
   static void no_op() {}
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_STORAGE_ALLOCATOR_H_ */

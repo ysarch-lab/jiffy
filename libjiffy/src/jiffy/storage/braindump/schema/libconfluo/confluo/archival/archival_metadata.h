@@ -5,7 +5,6 @@
 #include "io/incremental_file_reader.h"
 #include "io/incremental_file_writer.h"
 
-namespace confluo {
 namespace archival {
 
 // TODO distinction between metadata & transaction log actions:
@@ -127,7 +126,6 @@ class radix_tree_archival_metadata {
   size_t bucket_size_; // size of bucket
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_METADATA_H_ */

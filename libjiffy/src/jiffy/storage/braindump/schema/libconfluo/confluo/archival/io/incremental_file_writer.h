@@ -10,7 +10,6 @@
 
 using namespace ::utils;
 
-namespace confluo {
 namespace archival {
 
 class incremental_file_writer : public incremental_file_stream {
@@ -95,7 +94,6 @@ class incremental_file_writer : public incremental_file_stream {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_INCR_FILE_WRITER_H_ */

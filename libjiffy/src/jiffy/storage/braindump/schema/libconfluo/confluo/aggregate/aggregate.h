@@ -9,8 +9,6 @@
 #include "types/numeric.h"
 #include "threads/thread_manager.h"
 
-namespace confluo {
-
 class aggregate;
 
 /**
@@ -235,7 +233,5 @@ class aggregate {
   aggregate_list *aggs_;
   int concurrency_;
 };
-
-}
 
 #endif /* CONFLUO_AGGREGATE_H_ */

@@ -4,7 +4,6 @@
 #include "file_utils.h"
 #include "incremental_file_offset.h"
 
-namespace confluo {
 namespace archival {
 
 class incremental_file_stream {
@@ -27,7 +26,6 @@ class incremental_file_stream {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_IO_INCR_FILE_STREAM_H_ */

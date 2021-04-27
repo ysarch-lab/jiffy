@@ -5,8 +5,6 @@
 #include <sys/types.h>
 #include <cstdint>
 
-namespace confluo {
-
 /**
  * A batched cursor
  */
@@ -96,7 +94,5 @@ class batched_cursor {
   /** Current batch **/
   std::vector<T> current_batch_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_CURSOR_BATCHED_CURSOR_H_ */

@@ -1,6 +1,5 @@
 #include "archival/io/incremental_file_stream.h"
 
-namespace confluo {
 namespace archival {
 
 incremental_file_stream::incremental_file_stream()
@@ -27,5 +26,4 @@ void incremental_file_stream::truncate(incremental_file_offset incr_file_off, si
   utils::file_utils::truncate_file(transaction_log_path(), transaction_log_off);
 }
 
-}
 }

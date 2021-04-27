@@ -5,7 +5,6 @@
 #include "type_properties.h"
 #include "data_type.h"
 
-namespace confluo {
 
 /**
  * Manages adding types and utility functions for types
@@ -119,7 +118,5 @@ class primitive_types {
     return data_type(primitive_type::D_STRING, size);
   }
 };
-
-}
 
 #endif /* CONFLUO_TYPES_THREAD_MANAGER_H_ */

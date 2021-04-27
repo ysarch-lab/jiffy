@@ -6,8 +6,6 @@
 #include "types/immutable_value.h"
 #include "types/raw_data.h"
 
-namespace confluo {
-
 /**
  * Snapshot of the schema for backups
  */
@@ -108,7 +106,5 @@ class schema_snapshot {
  private:
   std::vector<column_snapshot> snapshot_;
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_SCHEMA_SNAPSHOT_H_ */

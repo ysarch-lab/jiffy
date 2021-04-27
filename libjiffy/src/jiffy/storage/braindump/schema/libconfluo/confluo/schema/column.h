@@ -10,8 +10,6 @@
 #include "types/mutable_value.h"
 #include "string_utils.h"
 
-namespace confluo {
-
 /**
  * Column class. Contains operations for operating on columns in the schema.
  */
@@ -136,7 +134,5 @@ class column_t {
   mutable_value max_;
   index_state_t idx_state_;
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_COLUMN_H_ */

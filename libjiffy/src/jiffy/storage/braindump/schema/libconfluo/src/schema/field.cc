@@ -1,7 +1,5 @@
 #include "schema/field.h"
 
-namespace confluo {
-
 field_t::field_t(uint16_t idx,
                  const data_type &type,
                  void *data,
@@ -41,6 +39,4 @@ byte_string field_t::get_key() const {
 
 std::string field_t::to_string() const {
   return value_.to_string();
-}
-
 }

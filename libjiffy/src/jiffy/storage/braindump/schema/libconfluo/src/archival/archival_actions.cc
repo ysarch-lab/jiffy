@@ -1,6 +1,5 @@
 #include "archival/archival_actions.h"
 
-namespace confluo {
 namespace archival {
 
 monolog_linear_archival_action::monolog_linear_archival_action()
@@ -105,5 +104,4 @@ size_t index_archival_action::data_log_archival_tail() {
   return *reinterpret_cast<const size_t *>(action_.c_str() + 2 * sizeof(size_t) + this->key_size());
 }
 
-}
 }

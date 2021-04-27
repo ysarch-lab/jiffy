@@ -8,7 +8,6 @@
 
 using namespace utils;
 
-namespace confluo {
 
 /** Parses the contents from the given string to the data */
 typedef void (*parse_op_t)(const std::string &, void *);
@@ -125,8 +124,6 @@ inline std::string to_string<void>(const immutable_raw_data &data) {
 template<>
 inline std::string to_string<std::string>(const immutable_raw_data &data) {
   return std::string(reinterpret_cast<const char *>(data.ptr));
-}
-
 }
 
 #endif /* CONFLUO_TYPES_STRING_OPS_H_ */

@@ -1,6 +1,5 @@
 #include "parser/expression_parser.h"
 
-namespace confluo {
 namespace parser {
 
 void utree_dbg_print::operator()(spirit::utf8_string_range_type const &str) const {
@@ -114,6 +113,5 @@ spirit::utree parse_expression(const std::string &e) {
     throw parse_exception(std::string("Parse failed at ") + rest);
   }
   return ut;
-}
 }
 }

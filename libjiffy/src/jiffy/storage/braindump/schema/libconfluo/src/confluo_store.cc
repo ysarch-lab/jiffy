@@ -1,7 +1,5 @@
 #include "confluo_store.h"
 
-namespace confluo {
-
 confluo_store::confluo_store(const std::string &data_path)
     : data_path_(utils::file_utils::full_path(data_path)) {
   utils::file_utils::create_dir(data_path_);
@@ -154,6 +152,4 @@ int64_t confluo_store::load_atomic_multilog_task(const std::string &name, option
     return INT64_C(-1);
   }
   return static_cast<int64_t>(id);
-}
-
 }

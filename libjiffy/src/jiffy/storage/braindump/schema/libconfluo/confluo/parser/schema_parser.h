@@ -10,7 +10,6 @@
 
 #include "schema/schema.h"
 
-namespace confluo {
 namespace parser {
 
 namespace qi = boost::spirit::qi;
@@ -70,7 +69,6 @@ struct schema_parser : public qi::grammar<I, ascii::space_type, kv_list()> {
  */
 std::vector<column_t> parse_schema(const std::string &s);
 
-}
 }
 
 #endif /* CONFLUO_PARSER_SCHEMA_PARSER_H_ */

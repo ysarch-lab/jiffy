@@ -5,7 +5,6 @@
 #include "index_log.h"
 #include "schema/schema.h"
 
-namespace confluo {
 namespace archival {
 
 class index_log_archiver {
@@ -46,7 +45,6 @@ class index_log_archiver {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_INDEX_LOG_ARCHIVER_H_ */

@@ -5,8 +5,6 @@
 #include "alert.h"
 #include "alert_index.h"
 
-namespace confluo {
-
 typedef batched_cursor<monitor::alert> alert_cursor;
 
 /**
@@ -40,7 +38,5 @@ class trigger_alert_cursor : public alert_cursor {
   alert_iterator end_;
   std::string trigger_name_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_CURSOR_ALERT_CURSOR_H_ */

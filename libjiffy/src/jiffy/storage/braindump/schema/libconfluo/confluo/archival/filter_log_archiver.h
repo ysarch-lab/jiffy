@@ -5,7 +5,6 @@
 #include "filter_archiver.h"
 #include "filter_log.h"
 
-namespace confluo {
 namespace archival {
 
 class filter_log_archiver {
@@ -45,7 +44,6 @@ class filter_log_archiver {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_FILTER_LOG_ARCHIVER_H_ */

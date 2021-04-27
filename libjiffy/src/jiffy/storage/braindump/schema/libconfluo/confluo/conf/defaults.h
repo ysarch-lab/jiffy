@@ -5,8 +5,6 @@
 #include "configuration_parser.h"
 #include "storage/ptr_aux_block.h"
 
-namespace confluo {
-
 /**
  * Default archival configuration parameters
  */
@@ -80,7 +78,5 @@ class defaults {
     return 1;
   }
 };
-
-}
 
 #endif /* CONFLUO_CONF_DEFAULTS_H_ */

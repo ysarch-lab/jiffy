@@ -1,6 +1,5 @@
 #include "archival/load_utils.h"
 
-namespace confluo {
 namespace archival {
 
 void load_utils::load_data_log(const std::string &path, const storage_mode mode, data_log &log) {
@@ -90,5 +89,4 @@ void load_utils::replay_index(index::radix_index *index,
   delete[] data_buf;
 }
 
-}
 }

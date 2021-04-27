@@ -5,7 +5,6 @@
 
 #include "types/immutable_value.h"
 
-namespace confluo {
 namespace sketch {
 
 #define ELEM_SWAP(a,b) { T t=(a); (a)=(b); (b)=t; }
@@ -67,7 +66,6 @@ struct hash_util {
 };
 
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_SKETCH_SKETCH_UTILS_H_ */

@@ -9,8 +9,6 @@
 
 using namespace utils;
 
-namespace confluo {
-
 /**
  * Delta-encoded array class. Stores sorted integer data encoded using
  * delta-encoding.
@@ -548,7 +546,5 @@ class elias_gamma_encoded_array : public delta_encoded_array<T, sampling_rate> {
     return delta_sum;
   }
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_BITMAP_DELTA_ENCODED_ARRAY_H_ */

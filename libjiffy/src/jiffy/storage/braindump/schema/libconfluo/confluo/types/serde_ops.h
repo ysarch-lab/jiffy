@@ -5,8 +5,6 @@
 #include "exceptions.h"
 #include "raw_data.h"
 
-namespace confluo {
-
 /** Serializes the raw immutable data to the output stream */
 typedef void (*serialize_op_t)(std::ostream &, const immutable_raw_data &);
 /** Initializes the raw mutable data from the input stream */
@@ -63,8 +61,6 @@ inline void deserialize(std::istream &in, mutable_raw_data &out) {
 template<>
 inline void deserialize<void>(std::istream &in, mutable_raw_data &value) {
   THROW(unsupported_exception, "Deserialize not supported for none type");
-}
-
 }
 
 #endif /* CONFLUO_TYPES_SERDE_OPS_H_ */

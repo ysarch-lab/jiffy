@@ -1,6 +1,5 @@
 #include "planner/query_plan.h"
 
-namespace confluo {
 namespace planner {
 
 query_plan::query_plan(const data_log *dlog, const schema_t *schema, const parser::compiled_expression &expr)
@@ -60,5 +59,4 @@ std::unique_ptr<record_cursor> query_plan::using_indexes(uint64_t version) {
   return make_distinct(std::unique_ptr<record_cursor>(new filter_record_cursor(std::move(o), dlog_, schema_, expr_)));
 }
 
-}
 }

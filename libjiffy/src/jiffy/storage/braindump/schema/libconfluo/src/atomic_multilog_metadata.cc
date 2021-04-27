@@ -1,8 +1,6 @@
 #include "atomic_multilog_metadata.h"
 #include "file_utils.h"
 
-namespace confluo {
-
 index_metadata::index_metadata(const std::string &field_name, double bucket_size)
     : field_name_(field_name),
       bucket_size_(bucket_size) {
@@ -197,5 +195,4 @@ storage::storage_mode metadata_reader::next_storage_mode() {
 }
 archival::archival_mode metadata_reader::next_archival_mode() {
   return io_utils::read<archival::archival_mode>(in_);
-}
 }

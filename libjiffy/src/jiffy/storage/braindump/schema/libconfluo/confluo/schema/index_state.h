@@ -4,8 +4,6 @@
 #include <cstdint>
 #include "atomic.h"
 
-namespace confluo {
-
 /**
  * Possible index stages
  */
@@ -92,7 +90,5 @@ struct index_state_t {
   uint16_t id_;
   double bucket_size_;
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_INDEX_STATE_H_ */

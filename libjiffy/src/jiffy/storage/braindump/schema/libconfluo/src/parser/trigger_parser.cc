@@ -1,6 +1,5 @@
 #include "parser/trigger_parser.h"
 
-namespace confluo {
 namespace parser {
 
 parsed_trigger parse_trigger(const std::string &t) {
@@ -19,5 +18,4 @@ parsed_trigger parse_trigger(const std::string &t) {
   return pt;
 }
 
-}
 }

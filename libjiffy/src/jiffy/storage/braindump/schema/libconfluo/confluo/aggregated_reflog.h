@@ -7,8 +7,6 @@
 #include "container/reflog.h"
 #include "storage/swappable_ptr.h"
 
-namespace confluo {
-
 /**
  * Reflog with aggregates
  */
@@ -95,6 +93,5 @@ class aggregated_reflog : public reflog {
   storage::swappable_ptr<aggregate> aggregates_; // TODO or array of swappable_ptrs for less contention
 };
 
-}
 
 #endif /* CONFLUO_AGGREGATED_REFLOG_H_ */

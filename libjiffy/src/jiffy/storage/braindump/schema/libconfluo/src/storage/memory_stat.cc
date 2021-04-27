@@ -1,6 +1,5 @@
 #include "storage/memory_stat.h"
 
-namespace confluo {
 namespace storage {
 
 memory_stat::memory_stat()
@@ -19,5 +18,4 @@ size_t memory_stat::get() {
   return atomic::load(&memory_used_);
 }
 
-}
 }

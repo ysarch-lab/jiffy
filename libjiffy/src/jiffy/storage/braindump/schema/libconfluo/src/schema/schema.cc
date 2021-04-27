@@ -1,8 +1,6 @@
 
 #include "schema/schema.h"
 
-namespace confluo {
-
 schema_t::schema_t()
     : record_size_(0) {
 }
@@ -192,6 +190,4 @@ std::vector<column_t> schema_builder::get_columns() const {
 
 bool schema_builder::user_provided_ts() const {
   return user_provided_ts_;
-}
-
 }

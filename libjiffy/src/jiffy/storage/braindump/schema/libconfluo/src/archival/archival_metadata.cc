@@ -1,6 +1,5 @@
 #include "archival/archival_metadata.h"
 
-namespace confluo {
 namespace archival {
 
 filter_aggregates_archival_metadata::filter_aggregates_archival_metadata(byte_string ts_block,
@@ -35,5 +34,4 @@ size_t filter_aggregates_archival_metadata::num_aggregates() {
   return num_aggs_;
 }
 
-}
 }

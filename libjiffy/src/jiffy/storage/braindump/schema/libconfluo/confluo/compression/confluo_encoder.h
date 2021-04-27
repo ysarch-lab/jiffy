@@ -8,7 +8,6 @@
 #include "storage/ptr_metadata.h"
 #include "container/unique_byte_array.h"
 
-namespace confluo {
 namespace compression {
 
 using namespace storage;
@@ -33,7 +32,6 @@ class confluo_encoder {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_COMPRESSION_CONFLUO_ENCODER_H_ */

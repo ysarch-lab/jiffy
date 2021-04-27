@@ -1,7 +1,6 @@
 #ifndef CONFLUO_CONTAINER_SKETCH_FREQUENCY_FUNCTIONS_H
 #define CONFLUO_CONTAINER_SKETCH_FREQUENCY_FUNCTIONS_H
 
-namespace confluo {
 namespace sketch {
 
 /**
@@ -29,7 +28,6 @@ class frequency_functions {
 
 };
 
-}
 }
 
 #endif // CONFLUO_CONTAINER_SKETCH_FREQUENCY_FUNCTIONS_H

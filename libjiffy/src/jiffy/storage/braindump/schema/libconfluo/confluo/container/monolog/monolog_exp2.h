@@ -10,7 +10,6 @@
 
 using namespace utils;
 
-namespace confluo {
 namespace monolog {
 
 /**
@@ -522,7 +521,6 @@ class monolog_exp2 : public monolog_exp2_base<T, NBUCKETS> {
   atomic::type<size_t> tail_;
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_MONOLOG_MONOLOG_EXP2_H_ */

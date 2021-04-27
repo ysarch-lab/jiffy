@@ -13,7 +13,6 @@
 
 using namespace utils;
 
-namespace confluo {
 namespace monolog {
 
 /**
@@ -549,7 +548,6 @@ class monolog_exp2_linear : public monolog_exp2_linear_base<T, NCONTAINERS, BUCK
   atomic::type<size_t> tail_;
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_MONOLOG_MONOLOG_EXP2_LINEAR_H_ */

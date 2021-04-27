@@ -3,8 +3,6 @@
 
 #include "storage_allocator.h"
 
-namespace confluo {
-
 /** Static storage allocator */
 class allocator {
  public:
@@ -13,7 +11,5 @@ class allocator {
     return alloc;
   }
 };
-
-}
 
 #endif /* CONFLUO_STORAGE_ALLOCATOR_H_ */

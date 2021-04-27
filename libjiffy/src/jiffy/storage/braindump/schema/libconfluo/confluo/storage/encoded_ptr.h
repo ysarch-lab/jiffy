@@ -5,7 +5,6 @@
 #include "compression/lz4_decoder.h"
 #include "ptr_metadata.h"
 
-namespace confluo {
 namespace storage {
 
 namespace detail {
@@ -191,7 +190,6 @@ class encoded_ptr {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_ENCODED_PTR_H_ */

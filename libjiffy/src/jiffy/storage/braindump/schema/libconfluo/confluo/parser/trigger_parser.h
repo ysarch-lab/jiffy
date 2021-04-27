@@ -10,7 +10,6 @@
 
 #include "exceptions.h"
 
-namespace confluo {
 namespace parser {
 
 /**
@@ -34,7 +33,6 @@ BOOST_FUSION_ADAPT_STRUCT(
         (std::string, relop)
         (std::string, threshold))
 
-namespace confluo {
 namespace parser {
 
 namespace qi = boost::spirit::qi;
@@ -84,7 +82,5 @@ class trigger_parser : public qi::grammar<I, ascii::space_type, parsed_trigger()
  */
 parsed_trigger parse_trigger(const std::string &t);
 
-}
-}
 
 #endif /* CONFLUO_PARSER_TRIGGER_PARSER_H_ */

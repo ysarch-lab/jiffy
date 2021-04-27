@@ -1,6 +1,5 @@
 #include "planner/query_planner.h"
 
-namespace confluo {
 namespace planner {
 
 query_planner::query_planner(const data_log *dlog, const index_log *idx_list, const schema_t *schema)
@@ -119,5 +118,4 @@ std::shared_ptr<query_op> query_planner::optimize_minterm(const parser::compiled
   return std::make_shared<index_op>(idx_list_->at(min_id), m_key_ranges[min_id]);
 }
 
-}
 }

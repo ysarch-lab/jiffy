@@ -11,7 +11,6 @@
 
 using namespace ::utils;
 
-namespace confluo {
 namespace archival {
 
 class incremental_file_reader : public incremental_file_stream {
@@ -72,7 +71,6 @@ class incremental_file_reader : public incremental_file_stream {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_INCR_FILE_READER_H_ */

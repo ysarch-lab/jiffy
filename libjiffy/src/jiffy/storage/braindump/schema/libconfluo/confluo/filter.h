@@ -15,7 +15,6 @@
 using namespace ::utils;
 using namespace ::confluo::parser;
 
-namespace confluo {
 namespace monitor {
 
 /**
@@ -176,7 +175,6 @@ class filter {
   atomic::type<bool> is_valid_;     // Marks if the filter is valid or not
 };
 
-}
 }
 
 #endif /* CONFLUO_FILTER_H_ */

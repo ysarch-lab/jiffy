@@ -1,6 +1,5 @@
 #include "archival/index_archiver.h"
 
-namespace confluo {
 namespace archival {
 
 index_archiver::index_archiver(const std::string &path, index::radix_index *index, const column_t column)
@@ -110,5 +109,4 @@ void index_load_utils::init_bucket_ptr(reflog *refs, size_t idx, encoded_reflog_
   container[bucket_idx].atomic_init(encoded_bucket, old_data);
 }
 
-}
 }

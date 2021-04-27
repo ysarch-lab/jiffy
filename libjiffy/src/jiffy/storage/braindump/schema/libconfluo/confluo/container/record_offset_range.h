@@ -4,8 +4,6 @@
 #include <cstdint>
 #include <iterator>
 
-namespace confluo {
-
 /**
 * Range for record offsets
 */
@@ -134,7 +132,5 @@ class record_offset_range {
   uint64_t version_;
   uint64_t record_size_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_RECORD_OFFSET_RANGE_H_ */

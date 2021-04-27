@@ -10,7 +10,6 @@
 #include "query_ops.h"
 #include "query_plan.h"
 
-namespace confluo {
 namespace planner {
 
 /**
@@ -83,7 +82,6 @@ class query_planner {
   const schema_t *schema_;
 };
 
-}
 }
 
 #endif /* CONFLUO_PLANNER_QUERY_PLANNER_H_ */

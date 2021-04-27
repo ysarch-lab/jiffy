@@ -1,6 +1,5 @@
 #include "parser/aggregate_parser.h"
 
-namespace confluo {
 namespace parser {
 
 parsed_aggregate parse_aggregate(const std::string &t) {
@@ -19,5 +18,4 @@ parsed_aggregate parse_aggregate(const std::string &t) {
   return pt;
 }
 
-}
 }

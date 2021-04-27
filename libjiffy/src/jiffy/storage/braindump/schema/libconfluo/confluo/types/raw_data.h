@@ -3,7 +3,6 @@
 
 #include <string>
 
-namespace confluo {
 
 /**
  * Raw data that cannot be changed
@@ -166,6 +165,5 @@ std::string mutable_raw_data::as<std::string>() const;
 template<>
 mutable_raw_data &mutable_raw_data::set<std::string>(const std::string &value);
 
-}
 
 #endif /* CONFLUO_TYPES_RAW_DATA_H_ */

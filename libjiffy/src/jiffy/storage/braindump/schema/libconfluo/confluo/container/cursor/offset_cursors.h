@@ -3,8 +3,6 @@
 
 #include "batched_cursor.h"
 
-namespace confluo {
-
 typedef batched_cursor<uint64_t> offset_cursor;
 
 /**
@@ -79,7 +77,5 @@ class offset_iterator_cursor : public offset_cursor {
   iterator end_;
   uint64_t version_;
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_CURSOR_OFFSET_CURSORS_H_ */

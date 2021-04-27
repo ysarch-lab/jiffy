@@ -6,8 +6,6 @@
 #include "raw_data.h"
 #include "byte_string.h"
 
-namespace confluo {
-
 /** A function that maps raw immutable data into a byte string used for
  * lookup 
  */
@@ -96,8 +94,6 @@ inline byte_string key_transform<std::string>(const immutable_raw_data &v, doubl
 template<>
 inline byte_string key_transform<void>(const immutable_raw_data &data, double) {
   THROW(unsupported_exception, "key_transform not supported for none type");
-}
-
 }
 
 #endif /* CONFLUO_TYPES_KEY_OPS_H_ */

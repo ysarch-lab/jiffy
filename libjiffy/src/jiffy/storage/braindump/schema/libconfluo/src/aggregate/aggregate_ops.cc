@@ -1,7 +1,5 @@
 #include "aggregate/aggregate_ops.h"
 
-namespace confluo {
-
 numeric sum_agg(const numeric &a, const numeric &b) {
   return a + b;
 }
@@ -31,6 +29,4 @@ aggregate_type find_aggregator_id(const std::string &name) {
     }
   }
   return 0;
-}
-
 }

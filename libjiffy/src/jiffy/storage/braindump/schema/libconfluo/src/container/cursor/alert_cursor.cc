@@ -1,7 +1,5 @@
 #include "container/cursor/alert_cursor.h"
 
-namespace confluo {
-
 trigger_alert_cursor::trigger_alert_cursor(const trigger_alert_cursor::alert_list &alerts,
                                            const std::string &trigger_name,
                                            size_t batch_size)
@@ -21,6 +19,4 @@ size_t trigger_alert_cursor::load_next_batch() {
     }
   }
   return i;
-}
-
 }

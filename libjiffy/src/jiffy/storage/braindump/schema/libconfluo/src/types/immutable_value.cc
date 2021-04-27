@@ -1,7 +1,5 @@
 #include "types/immutable_value.h"
 
-namespace confluo {
-
 immutable_value::immutable_value(const data_type &type)
     : type_(type),
       ptr_(nullptr) {
@@ -60,6 +58,4 @@ bool operator!=(const immutable_value &first, const immutable_value &second) {
 
 std::string immutable_value::to_string() const {
   return type_.name() + "(" + type_.to_string_op()(to_data()) + ")";
-}
-
 }

@@ -1,7 +1,5 @@
 #include "types/numeric.h"
 
-namespace confluo {
-
 data_type max(const data_type &t1, const data_type &t2) {
   return type_manager::get_type(std::max(t1.id, t2.id));
 }
@@ -290,6 +288,4 @@ uint8_t *numeric::data() {
 
 numeric cast(const numeric &val, const data_type &type) {
   return cast_ops::instance()[val.type().id][type.id](val);
-}
-
 }

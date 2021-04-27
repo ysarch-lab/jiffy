@@ -15,7 +15,6 @@
 #include "container/reflog.h"
 #include "storage/ptr_aux_block.h"
 
-namespace confluo {
 namespace archival {
 
 using namespace ::utils;
@@ -96,7 +95,6 @@ class load_utils {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_LOAD_UTILS_H_ */

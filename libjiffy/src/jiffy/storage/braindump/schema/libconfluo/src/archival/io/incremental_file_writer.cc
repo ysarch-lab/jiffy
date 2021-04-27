@@ -1,6 +1,5 @@
 #include "archival/io/incremental_file_writer.h"
 
-namespace confluo {
 namespace archival {
 
 incremental_file_writer::incremental_file_writer(const std::string &path,
@@ -101,5 +100,4 @@ void incremental_file_writer::close(std::ofstream *&ofs) {
   ofs = nullptr;
 }
 
-}
 }

@@ -1,7 +1,5 @@
 #include "types/type_properties.h"
 
-namespace confluo {
-
 type_properties::type_properties(const std::string &_name,
                                  size_t _size,
                                  void *_min,
@@ -74,6 +72,4 @@ std::vector<type_properties> detail::init_primitives() {
   props.push_back(DEFINE_PRIMITIVE(double, double));
   props.push_back(build_properties<std::string>("string", 0, false));
   return props;
-}
-
 }

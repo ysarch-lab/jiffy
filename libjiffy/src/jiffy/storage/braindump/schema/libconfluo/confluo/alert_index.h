@@ -8,7 +8,6 @@
 #include "container/monolog/monolog.h"
 #include "container/radix_tree.h"
 
-namespace confluo {
 namespace monitor {
 
 /**
@@ -73,7 +72,6 @@ class alert_index {
   idx_t idx_;
 };
 
-}
 }
 
 #endif /* CONFLUO_ALERT_INDEX_H_ */

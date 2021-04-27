@@ -12,7 +12,6 @@
 #include "types/primitive_types.h"
 #include "sketch_utils.h"
 
-namespace confluo {
 namespace sketch {
 
 /**
@@ -201,7 +200,6 @@ class count_sketch {
 
 };
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_SKETCH_COUNT_SKETCH_H_ */

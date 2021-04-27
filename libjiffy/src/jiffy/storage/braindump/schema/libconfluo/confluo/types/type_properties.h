@@ -9,7 +9,6 @@
 #include "string_ops.h"
 #include "string_utils.h"
 
-namespace confluo {
 
 /**
  * Operators and values a user-defined data type needs to define
@@ -186,7 +185,5 @@ class data_type_properties {
  * type properties
  */
 size_t find_type_properties(const std::string &name);
-
-}
 
 #endif /* CONFLUO_TYPES_TYPE_PROPERTIES_H_ */

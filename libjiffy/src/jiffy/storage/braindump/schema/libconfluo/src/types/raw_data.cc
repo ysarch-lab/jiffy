@@ -3,8 +3,6 @@
 #include <cstdio>
 #include <cstring>
 
-namespace confluo {
-
 immutable_raw_data::immutable_raw_data(const void *_ptr, size_t _size)
     : ptr(_ptr),
       size(_size) {
@@ -119,6 +117,4 @@ template<>
 mutable_raw_data &mutable_raw_data::set<std::string>(const std::string &str) {
   memcpy(ptr, str.data(), str.length());
   return *this;
-}
-
 }

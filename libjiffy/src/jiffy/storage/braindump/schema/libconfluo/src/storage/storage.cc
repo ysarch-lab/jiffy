@@ -1,6 +1,5 @@
 #include "storage/storage.h"
 
-namespace confluo {
 namespace storage {
 
 storage_functions &storage_mode_functions::IN_MEMORY_FNS() {
@@ -31,5 +30,4 @@ storage_functions *storage_mode_functions::STORAGE_FNS() {
   return fns;
 }
 
-}
 }

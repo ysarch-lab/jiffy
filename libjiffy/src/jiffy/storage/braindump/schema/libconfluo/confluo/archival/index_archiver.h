@@ -18,7 +18,6 @@
 #include "storage/ptr_metadata.h"
 #include "schema/schema.h"
 
-namespace confluo {
 namespace archival {
 
 using namespace compression;
@@ -88,7 +87,6 @@ class index_load_utils {
   static void init_bucket_ptr(reflog *refs, size_t idx, encoded_reflog_ptr encoded_bucket);
 };
 
-}
 }
 
 #endif /* CONFLUO_ARCHIVAL_INDEX_ARCHIVER_H_ */

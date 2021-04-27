@@ -2,7 +2,6 @@
 #define CONFLUO_STORAGE_PTR_METADATA_H_
 
 #include <cstdint>
-namespace confluo {
 namespace storage {
 
 // TODO add enums to convert between raw byte types
@@ -41,7 +40,6 @@ struct ptr_metadata {
   static ptr_metadata *get(void *ptr);
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_PTR_METADATA_H_ */

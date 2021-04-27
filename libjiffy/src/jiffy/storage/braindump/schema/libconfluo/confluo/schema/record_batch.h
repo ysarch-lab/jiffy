@@ -7,8 +7,6 @@
 
 #include "schema/schema.h"
 
-namespace confluo {
-
 /**
  * A block of records
  */
@@ -83,7 +81,5 @@ class record_batch_builder {
   std::map<int64_t, std::stringstream> batch_;
   const schema_t &schema_;
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_RECORD_BATCH_H_ */

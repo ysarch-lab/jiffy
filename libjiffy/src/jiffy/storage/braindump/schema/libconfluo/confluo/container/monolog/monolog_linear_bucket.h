@@ -6,7 +6,6 @@
 #include "storage/storage.h"
 #include "storage/swappable_encoded_ptr.h"
 
-namespace confluo {
 namespace monolog {
 
 using namespace ::utils;
@@ -302,7 +301,6 @@ const bool monolog_linear_bucket<T, BUFFER_SIZE>::INIT = true;
 template<typename T, size_t BUFFER_SIZE>
 const bool monolog_linear_bucket<T, BUFFER_SIZE>::UNINIT = false;
 
-}
 }
 
 #endif /* CONFLUO_CONTAINER_MONOLOG_MONOLOG_LINEAR_BLOCK_H_ */

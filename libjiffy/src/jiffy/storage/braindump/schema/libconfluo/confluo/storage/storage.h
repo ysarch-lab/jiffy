@@ -24,7 +24,6 @@
 
 #define PROT_RW PROT_READ | PROT_WRITE
 
-namespace confluo {
 namespace storage {
 
 // TODO: Add documentation
@@ -235,7 +234,6 @@ class storage_mode_functions {
   static storage_functions *STORAGE_FNS();
 };
 
-}
 }
 
 #endif /* CONFLUO_STORAGE_STORAGE_H_ */

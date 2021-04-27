@@ -24,8 +24,6 @@ using namespace utils;
 // FIXME: Timestamp handling
 // FIXME: Handle non-unique field names
 
-namespace confluo {
-
 /**
  * The schema for the atomic multilog. Contains operations applied to
  * data that it contains.
@@ -257,7 +255,5 @@ class schema_builder {
   uint16_t offset_;
   std::vector<column_t> columns_;
 };
-
-}
 
 #endif /* CONFLUO_SCHEMA_SCHEMA_H_ */

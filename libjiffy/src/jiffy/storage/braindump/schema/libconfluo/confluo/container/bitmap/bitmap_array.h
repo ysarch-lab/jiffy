@@ -5,8 +5,6 @@
 
 #include "bitmap.h"
 
-namespace confluo {
-
 /** 
  * Value reference class. Contains a reference to a bitmap array and 
  * supports pointer operations
@@ -1354,7 +1352,5 @@ class signed_bitmap_array : public bitmap_array_base<T> {
     return const_iterator(this, this->num_elements_);
   }
 };
-
-}
 
 #endif /* CONFLUO_CONTAINER_BITMAP_BITMAP_ARRAY_H_ */

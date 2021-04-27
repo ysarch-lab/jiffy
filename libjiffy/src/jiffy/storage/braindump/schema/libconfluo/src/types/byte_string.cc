@@ -1,6 +1,5 @@
 #include "types/byte_string.h"
 
-namespace confluo {
 
 immutable_byte_string::immutable_byte_string(uint8_t *data, size_t size)
     : data_(data),
@@ -195,6 +194,4 @@ byte_string &byte_string::operator=(byte_string &&other) {
   other.size_ = 0;
   other.data_ = nullptr;
   return *this;
-}
-
 }
