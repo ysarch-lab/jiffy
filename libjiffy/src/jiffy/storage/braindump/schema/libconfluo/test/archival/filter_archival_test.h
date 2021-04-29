@@ -10,7 +10,7 @@
 #include "storage/ptr_aux_block.h"
 
 using namespace ::confluo;
-using namespace ::confluo::archival;
+using namespace ::archival;
 
 class FilterArchivalTest : public testing::Test {
  public:

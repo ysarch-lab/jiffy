@@ -4,7 +4,7 @@
 #include "container/sketch/priority_queue.h"
 #include "gtest/gtest.h"
 
-using namespace ::confluo::sketch;
+using namespace ::sketch;
 
 class PriorityQueueTest : public testing::Test {
 

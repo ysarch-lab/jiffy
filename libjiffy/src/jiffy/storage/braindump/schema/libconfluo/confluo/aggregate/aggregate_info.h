@@ -7,7 +7,7 @@
 #include "parser/aggregate_parser.h"
 #include "trigger_log.h"
 
-using namespace confluo::monitor;
+using namespace monitor;
 
 /**
 * Information about the aggregate

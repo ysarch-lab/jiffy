@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "schema/schema.h"
 
-using namespace ::confluo::parser;
+using namespace ::parser;
 using namespace ::confluo;
 
 class ExpressionCompilerTest : public testing::Test {

@@ -4,7 +4,7 @@
 #include "container/lazy/stream.h"
 #include "gtest/gtest.h"
 
-using namespace ::confluo::lazy;
+using namespace ::lazy;
 
 static stream<int> integers_from(int n) {
   return stream<int>(n, [n]() -> stream<int> {

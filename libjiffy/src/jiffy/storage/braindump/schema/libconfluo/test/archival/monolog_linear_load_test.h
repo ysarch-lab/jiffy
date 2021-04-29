@@ -8,7 +8,7 @@
 #include "archival/monolog_linear_archiver.h"
 
 using namespace ::confluo;
-using namespace ::confluo::archival;
+using namespace ::archival;
 
 class MonologLinearLoadTest : public testing::Test {
 

@@ -12,7 +12,7 @@
 #include "gtest/gtest.h"
 
 using namespace ::confluo;
-using namespace ::confluo::archival;
+using namespace ::archival;
 
 class IndexLoadTest : public testing::Test {
  public:

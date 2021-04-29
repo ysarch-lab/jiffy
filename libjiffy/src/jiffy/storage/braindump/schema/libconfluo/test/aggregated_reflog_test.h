@@ -6,7 +6,7 @@
 #include "gtest/gtest.h"
 
 using namespace ::confluo;
-using namespace ::confluo::monitor;
+using namespace ::monitor;
 
 class AggregatedReflogTest : public testing::Test {
  public:

@@ -5,7 +5,7 @@
 
 #include "gtest/gtest.h"
 
-using namespace ::confluo::parser;
+using namespace ::parser;
 
 class AggregateParserTest : public testing::Test {
 };

@@ -56,12 +56,12 @@
  *  materialized views and uses new techniques to efficiently update the entire
  *  collection as a single atomic operation.
  */
-using namespace ::confluo::archival;
-using namespace ::confluo::monolog;
-using namespace ::confluo::index;
-using namespace ::confluo::monitor;
-using namespace ::confluo::parser;
-using namespace ::confluo::planner;
+using namespace ::archival;
+using namespace ::monolog;
+using namespace ::index;
+using namespace ::monitor;
+using namespace ::parser;
+using namespace ::planner;
 using namespace ::utils;
 
 /**

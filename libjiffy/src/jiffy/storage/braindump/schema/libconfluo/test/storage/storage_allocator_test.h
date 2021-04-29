@@ -6,7 +6,7 @@
 #include "storage/ptr_aux_block.h"
 #include "gtest/gtest.h"
 
-using namespace ::confluo::storage;
+using namespace ::storage;
 
 class StorageAllocatorTest : public testing::Test {
 

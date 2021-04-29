@@ -24,7 +24,7 @@ struct parsed_aggregate {
 
 }
 
-BOOST_FUSION_ADAPT_STRUCT(confluo::parser::parsed_aggregate,
+BOOST_FUSION_ADAPT_STRUCT(parser::parsed_aggregate,
                           (std::string, agg)(std::string, field_name))
 
 namespace parser {

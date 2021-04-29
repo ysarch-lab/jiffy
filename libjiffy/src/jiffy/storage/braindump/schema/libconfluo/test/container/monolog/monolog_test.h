@@ -7,8 +7,8 @@
 
 #include <thread>
 
-using namespace ::confluo::monolog;
-using namespace ::confluo::storage;
+using namespace ::monolog;
+using namespace ::storage;
 
 class MonoLogTest : public testing::Test {
  public:

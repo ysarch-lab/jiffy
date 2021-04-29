@@ -5,8 +5,8 @@
 #include "gtest/gtest.h"
 #include <thread>
 
-using namespace ::confluo::monitor;
-using namespace ::confluo::monolog;
+using namespace ::monitor;
+using namespace ::monolog;
 using namespace ::confluo;
 
 // Stateless filter

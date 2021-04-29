@@ -9,7 +9,7 @@
 #include "storage/ptr_metadata.h"
 
 using namespace ::confluo;
-using namespace ::confluo::storage;
+using namespace ::storage;
 
 class PtrTest : public testing::Test {
 

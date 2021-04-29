@@ -9,7 +9,7 @@
 #include <ctime>
 
 using namespace confluo;
-using namespace confluo::compression;
+using namespace compression;
 
 class DeltaEncodeTest : public testing::Test {
  public:

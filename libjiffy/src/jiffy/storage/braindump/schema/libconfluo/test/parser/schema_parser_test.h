@@ -5,7 +5,7 @@
 #include <sstream>
 #include "gtest/gtest.h"
 
-using namespace ::confluo::parser;
+using namespace ::parser;
 
 class SchemaParserTest : public testing::Test {
 };

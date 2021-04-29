@@ -28,7 +28,7 @@ struct parsed_trigger {
 }
 
 BOOST_FUSION_ADAPT_STRUCT(
-    confluo::parser::parsed_trigger,
+    parser::parsed_trigger,
     (std::string, aggregate_name)
         (std::string, relop)
         (std::string, threshold))

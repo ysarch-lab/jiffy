@@ -5,7 +5,7 @@
 #include "storage/encoded_ptr.h"
 #include "monolog/monolog.h"
 
-using namespace ::confluo::monolog;
+using namespace ::monolog;
 
 class reflog_constants {
  public:

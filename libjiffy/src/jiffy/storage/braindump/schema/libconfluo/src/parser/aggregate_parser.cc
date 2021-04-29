@@ -13,7 +13,7 @@ parsed_aggregate parse_aggregate(const std::string &t) {
   bool r = phrase_parse(iter, end, g, space, pt);
   if (iter != end || !r) {
     std::string rest(iter, end);
-    throw confluo::parse_exception(std::string("Parse failed at ") + rest);
+    throw parse_exception(std::string("Parse failed at ") + rest);
   }
   return pt;
 }

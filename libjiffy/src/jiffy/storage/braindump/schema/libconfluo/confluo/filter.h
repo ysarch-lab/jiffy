@@ -13,7 +13,7 @@
 // TODO: Update tests
 
 using namespace ::utils;
-using namespace ::confluo::parser;
+using namespace ::parser;
 
 namespace monitor {
 

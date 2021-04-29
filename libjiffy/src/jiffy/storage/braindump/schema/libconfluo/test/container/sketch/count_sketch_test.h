@@ -8,7 +8,7 @@
 #include "sketch_test_utils.h"
 #include "gtest/gtest.h"
 
-using namespace ::confluo::sketch;
+using namespace ::sketch;
 
 class CountSketchTest : public testing::Test {
  public:

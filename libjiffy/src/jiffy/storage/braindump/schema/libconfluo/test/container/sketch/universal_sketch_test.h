@@ -8,7 +8,7 @@
 #include "gtest/gtest.h"
 #include "sketch_test_utils.h"
 
-using namespace ::confluo::sketch;
+using namespace ::sketch;
 
 class UniversalSketchTest : public testing::Test {
 public:

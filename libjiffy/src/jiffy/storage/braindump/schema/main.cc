@@ -60,9 +60,9 @@ void main() {
 
   // go through record class
   /*
-  confluo::record_t record = schema.apply_unsafe(0, (void*)data);
+  record_t record = schema.apply_unsafe(0, (void*)data);
   for (size_t i = 0; i < schema.size(); i++) {
-    confluo::field_t curr_field = record.at(i);
+    field_t curr_field = record.at(i);
     // keep data in record format when working with it
     std::cout << i << ": " << curr_field.to_string() << std::endl;
   }

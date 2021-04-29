@@ -6,7 +6,7 @@
 #include <vector>
 #include "gtest/gtest.h"
 
-using namespace ::confluo::parser;
+using namespace ::parser;
 
 class ExpressionParserTest : public testing::Test {
  public:
