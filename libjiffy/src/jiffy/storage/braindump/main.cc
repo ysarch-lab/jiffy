@@ -12,7 +12,7 @@ typedef struct dummy_data_ {
   bool exists;
 } dummy_data;
 
-void main() {
+int main() {
   void* global_log;
   std::vector<std::string> user_data1 = {"1", "123", "true", "a", "543"};
   std::vector<std::string> user_data2 = {"2", "123", "false", "b", "543"};
