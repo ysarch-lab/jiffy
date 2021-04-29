@@ -168,8 +168,6 @@ struct record_t {
   std::vector<field_t> fields_;
 };
 
-}
-
 namespace std {
 
 /**
