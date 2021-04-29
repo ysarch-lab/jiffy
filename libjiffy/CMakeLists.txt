@@ -232,19 +232,18 @@ if (BUILD_STORAGE OR BUILD_DIRECTORY)
           src/jiffy/storage/types/binary.cpp
           src/jiffy/storage/types/byte_string.h
           src/jiffy/storage/types/byte_string.cc)
-  add_dependencies(jiffy thrift_ep ${HEAP_MANAGER_EP})
-  target_link_libraries(jiffy ${THRIFT_LIBRARY}
-            ${THRIFTNB_LIBRARY}
-            ${LIBEVENT_LIBRARY}
-            ${AWSSDK_LINK_LIBRARIES}
-            ${HEAP_MANAGER_LIBRARY}
-            ${NUMA_LIBRARY}
-            ${CMAKE_DL_LIBS}
-            ${CMAKE_THREAD_LIBS_INIT}
-            schema)
-  set_target_properties(jiffy PROPERTIES LINKER_LANGUAGE CXX)
 
-  add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/jiffy/storage/braindump/schema)
+  add_dependencies(jiffy thrift_ep memkind_ep)
+  message(STATUS "numalibrary = ${NUMA_LIBRARY}")
+  target_link_libraries(jiffy ${THRIFT_LIBRARY}
+          ${THRIFTNB_LIBRARY}
+          ${LIBEVENT_LIBRARY}
+          ${AWSSDK_LINK_LIBRARIES}
+          ${MEMKIND_LIBRARY}
+          ${NUMA_LIBRARY}
+          ${CMAKE_DL_LIBS}
+          ${CMAKE_THREAD_LIBS_INIT})
+  set_target_properties(jiffy PROPERTIES LINKER_LANGUAGE CXX)
 
   install(TARGETS jiffy
           RUNTIME DESTINATION bin
@@ -254,42 +253,40 @@ if (BUILD_STORAGE OR BUILD_DIRECTORY)
           DESTINATION include
           FILES_MATCHING PATTERN "*.h")
 
-  if(FALSE) # fake a block comment
-        if (BUILD_TESTS)
-        include_directories(${CATCH_INCLUDE_DIR})
-        add_executable(jiffy_tests
-                test/jiffy_tests.cpp
-                        test/block_allocation_service_test.cpp
-                        test/block_allocator_test.cpp
-                test/directory_lease_test.cpp
-                test/lease_expiry_worker_test.cpp
-                test/local_store_test.cpp
-                #test/file_size_tracker_test.cpp
-                test/directory_tree_test.cpp
-                test/directory_service_test.cpp
-                        test/file_partition_test.cpp
-                test/file_local_partition_test.cpp
-                        test/file_client_test.cpp
-                test/fifo_queue_partition_test.cpp
-                test/fifo_queue_local_partition_test.cpp
-                test/fifo_queue_client_test.cpp
-                test/hash_table_partition_test.cpp
-                test/hash_table_local_partition_test.cpp
-                test/hash_table_client_test.cpp
-                test/shared_log_partition_test.cpp
-                test/shared_log_client_test.cpp
-                test/jiffy_client_test.cpp
-                test/notification_test.cpp
-                        test/storage_manager_test.cpp
-                test/sync_worker_test.cpp
-                test/chain_replication_test.cpp
-                test/auto_scaling_test.cpp
-                test/test_utils.h)
-        target_link_libraries(jiffy_tests jiffy)
-        add_dependencies(jiffy_tests catch_ep boost_ep ${HEAP_MANAGER_EP} thrift_ep)
-        # Register test
-        add_test(JiffyTest jiffy_tests)
-        endif ()
+  if (BUILD_TESTS)
+    include_directories(${CATCH_INCLUDE_DIR})
+    add_executable(jiffy_tests
+            test/jiffy_tests.cpp
+	          test/block_allocation_service_test.cpp
+	          test/block_allocator_test.cpp
+            test/directory_lease_test.cpp
+            test/lease_expiry_worker_test.cpp
+            test/local_store_test.cpp
+            #test/file_size_tracker_test.cpp
+            test/directory_tree_test.cpp
+            test/directory_service_test.cpp
+	          test/file_partition_test.cpp
+            test/file_local_partition_test.cpp
+	          test/file_client_test.cpp
+            test/fifo_queue_partition_test.cpp
+            test/fifo_queue_local_partition_test.cpp
+            test/fifo_queue_client_test.cpp
+            test/hash_table_partition_test.cpp
+            test/hash_table_local_partition_test.cpp
+            test/hash_table_client_test.cpp
+            test/shared_log_partition_test.cpp
+            test/shared_log_client_test.cpp
+            test/jiffy_client_test.cpp
+            test/notification_test.cpp
+	          test/storage_manager_test.cpp
+            test/sync_worker_test.cpp
+            test/chain_replication_test.cpp
+            test/auto_scaling_test.cpp
+            test/test_utils.h)
+    target_link_libraries(jiffy_tests jiffy)
+    add_dependencies(jiffy_tests catch_ep boost_ep memkind_ep thrift_ep)
+    # Register test
+    add_test(JiffyTest jiffy_tests)
   endif ()
 endif ()
 
@@ -395,11 +392,9 @@ if (BUILD_CPP_CLIENT)
           src/jiffy/utils/property_map.cpp
           src/jiffy/utils/property_map.h
           src/jiffy/utils/thread_utils.h)
-  
-  add_dependencies(jiffy_client thrift_ep ${HEAP_MANAGER_EP})
+  add_dependencies(jiffy_client thrift_ep memkind_ep)
   target_link_libraries(jiffy_client ${THRIFT_LIBRARY}
           ${THRIFTNB_LIBRARY}
-          ${HEAP_MANAGER_LIBRARY}
           ${LIBEVENT_LIBRARY}
           ${CMAKE_DL_LIBS}
           ${CMAKE_THREAD_LIBS_INIT})
