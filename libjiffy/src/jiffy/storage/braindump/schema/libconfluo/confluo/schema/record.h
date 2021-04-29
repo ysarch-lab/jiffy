@@ -176,14 +176,14 @@ namespace std {
  * Record hash
  */
 template<>
-struct hash<confluo::record_t> {
+struct hash<record_t> {
   /**
    * Computes a hash on the record
    * @param k The record to hash
    * @return The hash of the record, which in this case is just the
    * log offset
    */
-  size_t operator()(const confluo::record_t &k) const {
+  size_t operator()(const record_t &k) const {
     return k.log_offset();
   }
 };

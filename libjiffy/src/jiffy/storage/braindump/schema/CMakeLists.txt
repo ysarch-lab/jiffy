@@ -67,28 +67,28 @@ set(lz4_STATIC_LIB "${BINARY_DIR}/lib/${CMAKE_STATIC_LIBRARY_PREFIX}lz4${CMAKE_S
 include_directories(SYSTEM ${lz4_INCLUDE_DIR})
 
 include_directories(
-        ${CMAKE_CURRENT_LIST_DIR}
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/aggregate
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/conf
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container/bitmap
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container/cursor
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container/lazy
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container/monolog
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/container/sketch
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/schema
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/storage
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/types
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/utils
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/archival
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/archival/io
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/compression
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/parser
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/planner
-        ${CMAKE_CURRENT_LIST_DIR}/libconfluo/confluo/threads
-        ${CMAKE_CURRENT_LIST_DIR}/libutils/utils
+        ${CMAKE_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/libconfluo
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/aggregate
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/conf
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container/bitmap
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container/cursor
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container/lazy
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container/monolog
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/container/sketch
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/schema
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/storage
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/types
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/utils
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/archival
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/archival/io
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/compression
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/parser
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/planner
+        ${CMAKE_SOURCE_DIR}/libconfluo/confluo/threads
+        ${CMAKE_SOURCE_DIR}/libutils/utils
 )
 
 add_executable(schema main.cc)
