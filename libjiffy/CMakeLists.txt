@@ -240,7 +240,13 @@ if (BUILD_STORAGE OR BUILD_DIRECTORY)
             ${HEAP_MANAGER_LIBRARY}
             ${NUMA_LIBRARY}
             ${CMAKE_DL_LIBS}
-            ${CMAKE_THREAD_LIBS_INIT})
+            ${CMAKE_THREAD_LIBS_INIT}
+            confluo
+            confluoutils)
+
+  add_subdirectory(src/jiffy/storage/braindump/libconfluo)
+  add_subdirectory(src/jiffy/storage/braindump/libutils)
+  
   set_target_properties(jiffy PROPERTIES LINKER_LANGUAGE CXX)
 
   install(TARGETS jiffy
