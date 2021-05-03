@@ -76,9 +76,6 @@ bool column_t::disable_indexing() {
 }
 
 field_t column_t::apply(void *data) const {
-  std::cout << "type name: " << type_.name() << std::endl;
-  std::cout << "offset: " << offset_ << std::endl;
-  
   return field_t(idx_, type_,
                  reinterpret_cast<unsigned char *>(data) + offset_,
                  is_indexed(), idx_state_.id(), idx_state_.bucket_size());
