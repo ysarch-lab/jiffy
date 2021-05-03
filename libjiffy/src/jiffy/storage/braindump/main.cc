@@ -4,27 +4,22 @@
 #include "schema.h"
 #include "record.h"
 
-typedef struct dummy_data_ {
-  ulong timestamp;
-  int amount;
-  //std::string name;
-  int amount2;
-  bool exists;
-} dummy_data;
-
 int main() {
   void* global_log;
+  // generate dummy values
   std::vector<std::string> user_data1 = {"1", "123", "true", "a", "543"};
-  std::vector<std::string> user_data2 = {"2", "123", "false", "b", "543"};
-  std::vector<std::string> user_data3 = {"3", "123", "true", "c", "543"};
+  std::vector<std::string> user_data2 = {"2", "321", "false", "b", "543"};
+  std::vector<std::string> user_data3 = {"3", "456", "true", "c", "543"};
   confluo::schema_builder builder;
 
+  // add columns to schema builder
   builder.add_column(confluo::data_type("int", NULL), "amount");
   builder.add_column(confluo::data_type("int", NULL), "amount1");
   builder.add_column(confluo::data_type("bool", NULL), "exists");
   builder.add_column(confluo::data_type("char", NULL), "character");
   builder.add_column(confluo::data_type("int", NULL), "amount3");
   confluo::schema_t schema(builder.get_columns());
+  // allocated space for global_log to hold 3 records
   global_log = malloc(schema.record_size() * 3);
 
   // write:
@@ -38,36 +33,26 @@ int main() {
   memcpy(global_log + 2 * offset, blob3, schema.record_size());
 
   // read: 
-  // get record ID, and use offset to get to correct blob 
-  // do data_to_record vector on blob and output it to the user
-  std::vector<std::string> output_data = schema.data_to_record_vector(global_log + 2 * offset);
+  // use offset to get to 3rd blob 
+  void* targeted_record = global_log + 2 * offset;
+  // convert blob to vector<string>
+  std::vector<std::string> output_data = schema.data_to_record_vector(targeted_record);
 
+  // pass through columns of record
   for (auto i = output_data.begin(); i != output_data.end(); ++i)
     std::cout << *i << ' ';
   std::cout << std::endl;
 
-
-  //std::cout << (data->name).size() << std::endl;
-  //std::cout << data->name << std::endl;
-
-  // go through schema classs
-  /*
-  std::vector<std::string> record = schema.data_to_record_vector((void*)data);
-  std::string output;
-  schema.record_vector_to_data(output, record);
-  std::cout << output << std::endl;
-  */
-
-  // go through record class
-  /*
-  confluo::record_t record = schema.apply_unsafe(0, (void*)data);
-  for (size_t i = 0; i < schema.size(); i++) {
-    confluo::field_t curr_field = record.at(i);
-    // keep data in record format when working with it
-    std::cout << i << ": " << curr_field.to_string() << std::endl;
+  // projection:
+  size_t end_of_log = (size_t) global_log + 3*offset;
+  for (size_t curr_record = (size_t) global_log; curr_record < end_of_log; curr_record += offset) {
+    // apply schema to pointer within global log to get current record
+    confluo::record_t record = schema.apply_unsafe(0, (void*) curr_record);
+    // output 2nd element of given record 
+    confluo::field_t curr_field = record.at(2);
+    std::cout << curr_field.to_string() << std::endl;
   }
-  */
-  
+  std::cout << std::endl;
 
   // SELECT:
   // use filter and std::unique_ptr<record_cursor> atomic_multilog::execute_filter()
